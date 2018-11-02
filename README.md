@@ -1,6 +1,6 @@
 # EuroPOND software tools
 
-This repository contains software tools for modeling progression of diseases, developed within the [EuroPOND](http://www.europond.eu) (European Progression of Neurological Diseases, funded by the European Union’s Horizon 2020 research and innovation programme under grant agreement No. 666992).
+This repository contains software tools for modeling progression of diseases, developed within the [EuroPOND](http://www.europond.eu) project (European Progression of Neurological Diseases, funded by the European Union’s Horizon 2020 research and innovation programme under grant agreement No. 666992).
 
 These software tools allow to build scenarios of disease progression, to study their variability and heterogeneity within populations and to establish staging of individual patients. They take as inputs various types of medical measurements (clinical/cognitive scores, biomarker measurement, medical images, anatomical shapes...). While mainly developed for neurological diseases, they are potentially applicable to other conditions.
 
