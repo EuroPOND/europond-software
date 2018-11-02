@@ -2,7 +2,7 @@
 
 This repository contains software tools for modeling progression of diseases, developed within the [EuroPOND](http://www.europond.eu) project (European Progression of Neurological Diseases, funded by the European Union’s Horizon 2020 research and innovation programme under grant agreement No. 666992).
 
-These software tools allow to build scenarios of disease progression, to study their variability and heterogeneity within populations and to establish staging of individual patients. They take as inputs various types of medical measurements (clinical/cognitive scores, biomarker measurement, medical images, anatomical shapes...). While mainly developed for neurological diseases, they are potentially applicable to other conditions.
+These software tools allow building scenarios of disease progression, studying their variability and heterogeneity within populations and staging of individual patients. They take as inputs various types of medical measurements (clinical/cognitive scores, biomarker measurement, medical images, anatomical shapes...). While mainly developed for neurological diseases, they are potentially applicable to other disorders.
 
 ## EBM (event-based model)
 **TODO (@UCL): add description, if possible following the same organization used for Leasp**
@@ -12,8 +12,8 @@ These software tools allow to build scenarios of disease progression, to study t
 
 ## Leasp (LEArning Spatiotemporal Patterns)
 ![imageLeasp](./images/leasp_800.jpg)
-- **Leasp** is a software tool for models of progression from longitudinal measurements.
-- **Examples of applications in neurological diseases:** learning trajectories of progression for clinical/cognitive scores, fluid biomarker measurements (e.g. CSF, blood), volumetric MRI measures, other regional neuroimaging measures (e.g. FDG PET, Amyloid PET) cortical thickness maps   
+- **Leasp** is a software tool for estimating models of progression from longitudinal measurements.
+- **Examples of applications in neurological diseases:** learning trajectories of progression for clinical/cognitive scores, fluid biomarker measurements (e.g. CSF, blood), volumetric MRI measures, other regional neuroimaging measures (e.g. FDG PET, Amyloid PET), cortical thickness maps   
 - **Links**
   - [Repository](https://gitlab.icm-institute.org/aramislab/longitudina)
   - [Documentation](https://gitlab.icm-institute.org/aramislab/longitudina/blob/master/README.md)
