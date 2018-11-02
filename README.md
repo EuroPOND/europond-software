@@ -15,8 +15,8 @@ These software tools allow building scenarios of disease progression, studying t
 - **Leasp** is a software tool for estimating models of progression from longitudinal measurements.
 - **Examples of applications in neurological diseases:** learning trajectories of progression for clinical/cognitive scores, fluid biomarker measurements (e.g. CSF, blood), volumetric MRI measures, other regional neuroimaging measures (e.g. FDG PET, Amyloid PET), cortical thickness maps...   
 - **Links**
-  - [Repository](https://gitlab.icm-institute.org/aramislab/longitudina)
-  - [Documentation](https://gitlab.icm-institute.org/aramislab/longitudina/blob/master/README.md)
+  - [Repository](https://gitlab.icm-institute.org/aramislab/leasp)
+  - [Documentation](https://gitlab.icm-institute.org/aramislab/leasp/blob/master/README.md)
 - **Type of inputs:** longitudinal scalar measurements (e.g. clinical/cognitive scores, biomarker measurements) or network-valued measurements (e.g. cortical thickness map, PET SUVR projected onto the cortical surface...)
 - **Related publications**
   - **Generic model** - Jean-Baptiste Schiratti, Stéphanie Allassonnière, Olivier Colliot, and Stanley Durrleman. A Bayesian mixed-effects model to learn trajectories of changes from repeated manifold-valued observations.
