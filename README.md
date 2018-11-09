@@ -4,8 +4,19 @@ This repository contains software tools for modeling progression of diseases, de
 
 These software tools allow building scenarios of disease progression, studying their variability and heterogeneity within populations and staging of individual patients. They take as inputs various types of medical measurements (clinical/cognitive scores, biomarker measurement, medical images, anatomical shapes...). While mainly developed for neurological diseases, they are potentially applicable to other disorders.
 
-## EBM (event-based model)
-**TODO (@UCL): add description, if possible following the same organization used for Leasp**
+## EBM (Event-Based Model)
+
+![imageEBM](./images/ebm_800.jpg)
+- **EBM** is a software tool for estimating models of progression from cross-sectional measurements.
+- **Examples of applications in neurological diseases:** learning sequences, with uncertainty, of cumulative abnormality *events* (normal->abnormal) over the full time course of a disease, including: clinical/cognitive scores, fluid biomarker measurements (e.g. cerebrospinal fluid, blood), imaging biomarkers (volumetric MRI, cortical thickness, FDG PET, amyloid PET, diffusion MRI).
+- **Links**
+  - [Repository](https://github.com/EuroPOND/ebm)
+- **Type of inputs:** cross-sectional scalar measurements
+- **Related publications**
+  - **Robust Model** - Young, et al. *Brain* 137:2564, May 2014 [Open Access PDF](https://doi.org/10.1093/brain/awu176)
+  - **Original Model** - Fonteijn, et al. An event-based model for disease progression and its application in familial Alzheimer's disease and Huntington's disease. *NeuroImage* 60:1880, January 2012 [link](https://doi.org/10.1016/j.neuroimage.2012.01.062) (Erbsmann Prize winner: [IPMI 2011](https://doi.org/10.1007/978-3-642-22092-0_61))
+
+- **Description.** This software package implements the event-based model --- a simple, robust tool for the estimation of the most likely sequence of events in a progressive (montonic) process, such as a neurodegenerative disease. Uniquely, this is achieved using cross-sectional data --- requiring only a single visit per individual. The resulting disease signature is a probabilistic sequence of discrete events useful for fine-grained staging across the full time course of the process.
 
 ## pyEBM
 ![imagepyebm](./images/pyebm_ordering.png)
