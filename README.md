@@ -19,6 +19,7 @@ These software tools allow building signatures of disease progression, studying 
 - **Description.** This software package implements the event-based model --- a simple, robust tool for the estimation of the most likely sequence of events in a progressive (montonic) process, such as a neurodegenerative disease. Uniquely, this is achieved using cross-sectional data --- requiring only a single visit per individual. The resulting disease signature is a probabilistic sequence of discrete events useful for fine-grained staging across the full time course of the process.
 
 ## pyEBM
+<<<<<<< HEAD
 
 ![imagePyEBM](./images/pyebm_800.jpg)
 - **pyEBM** is a software toolbox for estimating event-based models of progression from cross-sectional measurements.
@@ -32,6 +33,17 @@ A Discriminative Event Based Model for Alzheimer's Disease Progression Modeling.
   - **Original Model** - Venkatraghavan, et al. . *Submitted* 2018 [Open Access PDF](https://arxiv.org/abs/1808.03604)
 
 - **Description.** This software package implements a toolbox of event-based models, including the discriminative EBM (dEBM) which takes a different approach to the original EBM (above).
+=======
+![imagepyebm](./images/pyebm_ordering.png)
+- **pyEBM** is a open-source toolbox for event-based models, which estimates the ordering in which biomarkers become abnormal during disease progression from cross-sectional data. 
+- The toolbox consists of a collection of algorithms for mixture modeling, obtaining the ordering, and patient staging.
+- **Links**
+  - [Repository](https://github.com/88vikram/pyebm/)
+  - [Documentation](https://github.com/88vikram/pyebm/blob/master/README.md)
+- **Related publications**
+Venkatraghavan V., Bron E.E., Niessen W., Klein S. ‘[Disease Progression Timeline Estimation for Alzheimer's Disease using Discriminative Event Based Modeling](https://arxiv.org/abs/1808.03604)’, Manuscript Submitted.
+
+>>>>>>> 8fd51a06762baaf9d3ea84bec44a90ac52116c0e
 
 ## Leasp (LEArning Spatiotemporal Patterns)
 ![imageLeasp](./images/leasp_800.jpg)
