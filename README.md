@@ -8,7 +8,15 @@ These software tools allow building scenarios of disease progression, studying t
 **TODO (@UCL): add description, if possible following the same organization used for Leasp**
 
 ## pyEBM
-**TODO (@EMC): add description, if possible following the same organization used for Leasp**
+![imagepyebm](./images/pyebm_ordering.png)
+- **pyEBM** is a open-source toolbox for event-based models, which estimates the ordering in which biomarkers become abnormal during disease progression from cross-sectional data. 
+- The toolbox consists of a collection of algorithms for mixture modeling, obtaining the ordering, and patient staging.
+- **Links**
+  - [Repository](https://github.com/88vikram/pyebm/)
+  - [Documentation](https://github.com/88vikram/pyebm/blob/master/README.md)
+- **Related publications**
+Venkatraghavan V., Bron E.E., Niessen W., Klein S. ‘[Disease Progression Timeline Estimation for Alzheimer's Disease using Discriminative Event Based Modeling](https://arxiv.org/abs/1808.03604)’, Manuscript Submitted.
+
 
 ## Leasp (LEArning Spatiotemporal Patterns)
 ![imageLeasp](./images/leasp_800.jpg)
