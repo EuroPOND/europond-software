@@ -5,7 +5,6 @@ This repository contains software tools for modeling progression of diseases, de
 These software tools allow building signatures of disease progression, studying their variability and heterogeneity within and between populations, and staging of individual patients. They take as inputs various types of medical measurements (clinical/cognitive scores, biomarker measurement, medical images, anatomical shapes, demographics, risk factors, ...). While mainly developed for neurological diseases, they are potentially applicable to other progressive disorders, such as lung diseases.
 
 ## EBM (Event-Based Model)
-
 ![imageEBM](./images/ebm_800.jpg)
 - **EBM** is a software tool for estimating models of progression from cross-sectional measurements.
 - **Examples of applications in neurological diseases:** learning sequences, with uncertainty, of cumulative abnormality *events* (normal->abnormal) over the full time course of a disease, including: clinical/cognitive scores, fluid biomarker measurements (e.g. cerebrospinal fluid, blood), imaging biomarkers (volumetric MRI, cortical thickness, FDG PET, amyloid PET, diffusion MRI).
@@ -13,7 +12,7 @@ These software tools allow building signatures of disease progression, studying 
   - [Repository](https://github.com/EuroPOND/ebm)
 - **Type of inputs:** cross-sectional scalar measurements
 - **Related publications**
-  - **Robust Model** - Young, et al. *Brain* 137:2564, May 2014 [Open Access PDF](https://doi.org/10.1093/brain/awu176)
+  - **Robust Model** - Young, et al. A data-driven model of biomarker changes in sporadic Alzheimer's disease. *Brain* 137:2564, May 2014 [Open Access link](https://doi.org/10.1093/brain/awu176)
   - **Original Model** - Fonteijn, et al. An event-based model for disease progression and its application in familial Alzheimer's disease and Huntington's disease. *NeuroImage* 60:1880, January 2012 [link](https://doi.org/10.1016/j.neuroimage.2012.01.062) (Erbsmann Prize winner: [IPMI 2011](https://doi.org/10.1007/978-3-642-22092-0_61))
 
 - **Description.** This software package implements the event-based model --- a simple, robust tool for the estimation of the most likely sequence of events in a progressive (montonic) process, such as a neurodegenerative disease. Uniquely, this is achieved using cross-sectional data --- requiring only a single visit per individual. The resulting disease signature is a probabilistic sequence of discrete events useful for fine-grained staging across the full time course of the process.
@@ -40,7 +39,7 @@ Venkatraghavan V., Bron E.E., Niessen W., Klein S. ‘[Disease Progression Timel
   - **Generic model** - Jean-Baptiste Schiratti, Stéphanie Allassonnière, Olivier Colliot, and Stanley Durrleman. A Bayesian mixed-effects model to learn trajectories of changes from repeated manifold-valued observations.
 *The Journal of Machine Learning Research*, 18:1–33, December 2017. [Open Access PDF](https:
 //hal.archives-ouvertes.fr/hal-01540367).
-  - **Model for network-valued measurements** - Igor Koval, Jean-Baptiste Schiratti, Alexandre Routier, Michael Bacci, Olivier Colliot, Stéphanie Allassonnière, and Stanley Durrleman. Spatiotemporal Propagation of the Cortical Atrophy: Population and Individual Patterns. *Front Neurol.* 2018 May 4;9:235. [Open Access PDF](https://www.frontiersin.org/articles/10.3389/fneur.2018.00235/full).
+  - **Model for network-valued measurements** - Igor Koval, Jean-Baptiste Schiratti, Alexandre Routier, Michael Bacci, Olivier Colliot, Stéphanie Allassonnière, and Stanley Durrleman. Spatiotemporal Propagation of the Cortical Atrophy: Population and Individual Patterns. *Front Neurol.* 2018 May 4;9:235. [Open Access link](https://www.frontiersin.org/articles/10.3389/fneur.2018.00235/full).
 
 - **Description.** This software package implements a generic Bayesian mixed-effects model to estimate the temporal progression of a biological phenomenon from observations obtained at multiple time points for a group of individuals. The progression is modeled by continuous trajectories in the space of measurements. Individual trajectories of progression result from spatiotemporal transformations of an average trajectory. These transformations allow to quantify the changes in direction and pace at which the trajectories are followed. The framework of Riemannian geometry allows the model to be used with any kind of measurements with smooth constraints. A stochastic version of the Expectation-Maximization algorithm is used to produce maximum a posteriori estimates of the parameters.
 
@@ -55,14 +54,23 @@ Venkatraghavan V., Bron E.E., Niessen W., Klein S. ‘[Disease Progression Timel
   - [Documentation](https://gitlab.icm-institute.org/aramislab/deformetrica/wikis/home)
 - **Related publications**
   - **Model for longitudinal shape data** - Alexandre Bône, Olivier Colliot, and Stanley Durrleman. Learning distributions of shape trajectories
-from longitudinal datasets: a hierarchical model on a manifold of diffeomorphisms. *In CVPR 2018 - Computer Vision and Pattern Recognition 2018*, Salt Lake City, United States, June 2018. [Open Access PDF](https://hal.archives-ouvertes.fr/hal-01744538).
-  - **Generic description of Deformetrica** - Alexandre Bône, Maxime Louis, Benoît Martin, Stanley Durrleman, Deformetrica 4: an open-source software for statistical shape analysis, *In Proc ShapeMI Workshop, MICCAI 2018*, Sep 2018, Granada, Spain [Open Access PDF](https://hal.inria.fr/hal-01874752v2).
+from longitudinal datasets: a hierarchical model on a manifold of diffeomorphisms. *In CVPR 2018 - Computer Vision and Pattern Recognition 2018*, Salt Lake City, United States, June 2018. [Open Access link](https://hal.archives-ouvertes.fr/hal-01744538).
+  - **Generic description of Deformetrica** - Alexandre Bône, Maxime Louis, Benoît Martin, Stanley Durrleman, Deformetrica 4: an open-source software for statistical shape analysis, *In Proc ShapeMI Workshop, MICCAI 2018*, Sep 2018, Granada, Spain [Open Access link](https://hal.inria.fr/hal-01874752v2).
 - **Description.** The implemented approach allows to learn a distribution of shape trajectories from longitudinal data, i.e. the collection of individual objects repeatedly observed at multiple time-points. It can in particular be applied to any series of anatomical shapes (represented as meshes) extracted from medical images. The method allows to compute an average spatiotemporal trajectory of shape changes at the group level, and the individual variations of this trajectory both in terms of geometry and time dynamics. The model is formulated as the combination of a generic statistical model for manifold-valued longitudinal data, a deformation model defining shape trajectories via the action of a set of diffeomorphisms with a manifold structure, and an efficient numerical scheme to compute parallel transport on this manifold.
 
-## DEM
-**TODO (@UCL): add description, if possible following the same organization used for Leasp**`
+## PySuStaIn (Subtype and Stage Inference)
+![imageEBM](./images/sustain_800.jpg)
+- **SuStaIn** is a software tool for performing **Su**btype and **Sta**ge **In**ference to estimate subtype models of progression from cross-sectional measurements.
+- **Examples of applications in neurological diseases:** learning probabilistic sequences *for multiple subtypes* of cumulative abnormality over the full time course of a disease, including: clinical/cognitive scores, fluid biomarker measurements (e.g. cerebrospinal fluid, blood), imaging biomarkers (volumetric MRI, cortical thickness, FDG PET, amyloid PET, diffusion MRI).
+- **Links**
+  - [Repository](https://github.com/EuroPOND/PySustain)
+- **Type of inputs:** cross-sectional scalar measurements
+- **Related publication**
+  - **Original Model** - Young, et al. Uncovering the heterogeneity and temporal complexity of neurodegenerative diseases with Subtype and Stage Inference. *Nature Communications* 9:221, October 2018 [Open Access link](https://doi.org/10.1038/s41467-018-05892-0)
 
-## SuStaIn
+- **Description.** This software package is a python implementation of the [original MATLAB](https://github.com/ucl-mig/SuStaInMatlab). The package infers disease subtypes and their progression patterns from cross-sectional datasets --- requiring only a single visit per individual. The resulting disease signature is a set of probabilistic sequences of discrete events useful for fine-grained subtyping and staging across the full time course.
+
+## DEM
 **TODO (@UCL): add description, if possible following the same organization used for Leasp**`
 
 ## DIVE
@@ -70,6 +78,7 @@ from longitudinal datasets: a hierarchical model on a manifold of diffeomorphism
 
 ## Gaussian process regression models
 **TODO (@UCL): add description, if possible following the same organization used for Leasp**`
+
 
 ## Clinica
 ![imageDeformetrica](./images/clinica_800.jpg)
