@@ -92,7 +92,7 @@ from longitudinal datasets: a hierarchical model on a manifold of diffeomorphism
 - **Description:** This software package clusters vertex-wise data to infer common trajectories of biological measurements. The resulting signature is a set of probabilistic trajectories of continuous measures. This is useful in neurodegenerative disease applications for data-driven, biomarker-based patient staging that is not restricted by predefined atlases of regions of interest in the human brain.
 
 ## Gaussian Process regression models (with latent-time shift)
-![imageGPR](./images/gpr_animated.gif)
+<img src="./images/gpr_animated.gif" width="400px">
 - This is a software tool for estimating a set of group-level long-term biomarker trajectories as a function of unknown disease time (estimated by the tool), by combining short-term longitudinal measurements from individuals.
 - **Examples of applications in neurological diseases:** simultaneously learning group-level probabilistic trajectories and a reparameterised disease time (age + disease-related time-shift), over the full time course of a disease, for scalar biomarkers such as: clinical/cognitive scores, fluid biomarker measurements (e.g. cerebrospinal fluid, blood), imaging biomarkers (volumetric MRI, cortical thickness, FDG PET, amyloid PET, diffusion MRI).
 - **Links**
