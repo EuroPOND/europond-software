@@ -58,8 +58,8 @@ from longitudinal datasets: a hierarchical model on a manifold of diffeomorphism
   - **Generic description of Deformetrica** - Alexandre Bône, Maxime Louis, Benoît Martin, Stanley Durrleman, Deformetrica 4: an open-source software for statistical shape analysis, *In Proc ShapeMI Workshop, MICCAI 2018*, Sep 2018, Granada, Spain [Open Access link](https://hal.inria.fr/hal-01874752v2).
 - **Description.** The implemented approach allows to learn a distribution of shape trajectories from longitudinal data, i.e. the collection of individual objects repeatedly observed at multiple time-points. It can in particular be applied to any series of anatomical shapes (represented as meshes) extracted from medical images. The method allows to compute an average spatiotemporal trajectory of shape changes at the group level, and the individual variations of this trajectory both in terms of geometry and time dynamics. The model is formulated as the combination of a generic statistical model for manifold-valued longitudinal data, a deformation model defining shape trajectories via the action of a set of diffeomorphisms with a manifold structure, and an efficient numerical scheme to compute parallel transport on this manifold.
 
-## PySuStaIn (Subtype and Stage Inference)
-![imageEBM](./images/sustain_800.jpg)
+## pySuStaIn (Subtype and Stage Inference)
+![imageSuStain](./images/sustain_800.jpg)
 - **SuStaIn** is a software tool for performing **Su**btype and **Sta**ge **In**ference to estimate subtype models of progression from cross-sectional measurements.
 - **Examples of applications in neurological diseases:** learning probabilistic sequences *for multiple subtypes* of cumulative abnormality over the full time course of a disease, including: clinical/cognitive scores, fluid biomarker measurements (e.g. cerebrospinal fluid, blood), imaging biomarkers (volumetric MRI, cortical thickness, FDG PET, amyloid PET, diffusion MRI).
 - **Links**
@@ -68,13 +68,22 @@ from longitudinal datasets: a hierarchical model on a manifold of diffeomorphism
 - **Related publication**
   - **Original Model** - Young, et al. Uncovering the heterogeneity and temporal complexity of neurodegenerative diseases with Subtype and Stage Inference. *Nature Communications* 9:221, October 2018 [Open Access link](https://doi.org/10.1038/s41467-018-05892-0)
 
-- **Description.** This software package is a python implementation of the [original MATLAB](https://github.com/ucl-mig/SuStaInMatlab). The package infers disease subtypes and their progression patterns from cross-sectional datasets --- requiring only a single visit per individual. The resulting disease signature is a set of probabilistic sequences of discrete events useful for fine-grained subtyping and staging across the full time course.
+- **Description.** This software package is a python implementation of the [original MATLAB code](https://github.com/ucl-mig/SuStaInMatlab). The package infers disease subtypes and their progression patterns from cross-sectional datasets --- requiring only a single visit per individual. The resulting disease signature is a set of probabilistic sequences of discrete events useful for fine-grained subtyping and staging across the full time course.
 
-## DEM
+## DEM (Differential Equation Model)
 **TODO (@UCL): add description, if possible following the same organization used for Leasp**`
 
-## DIVE
-**TODO (@UCL): add description, if possible following the same organization used for Leasp**`
+## DIVE (Data-Driven Inference of Vertexwise Evolution)
+![imageDIVE](./images/dive_800.jpg)
+- **DIVE** is a software tool for estimating clusters of disease progression patterns in the brain, at the vertex level (e.g., individual voxels) from longitudinal measurements.
+- **Examples of applications in neurological diseases:** learning clusters of probabilistic trajectories of cumulative abnormality across the brain surface (cortex) over the full time course of a disease. The clustering imposes no spatial correlation assumptions, so it can be used for data-driven discovery of patterns that aren't limited by any given brain parcellation atlas. It was designed to estimate cortical abnormality in the human brain, e.g., cortical thickness, or amyloid deposition --- hallmarks of Alzheimer's disease.
+- **Links**
+  - [Repository](https://github.com/EuroPOND/dive)
+- **Type of inputs:** longitudinal vertex-wise measurements, e.g., grey-matter thickness or amyloid deposition across the brain's cortical surface.
+- **Related publication**
+  - **Original Model** - Marinescu, et al. A vertex clustering model for disease progression: Application to cortical thickness images. *Information Processing in Medical Imaging (IPMI)* 2017 [Open Access link](http://www.homepages.ucl.ac.uk/~rmaprvm/MarinescuIPMI2017.pdf) [Proceedings](https://doi.org/10.1007/978-3-319-59050-9_11)
+
+- **Description.** This software package clusters vertex-wise data to infer common trajectories of biological measurements. The resulting signature is a set of probabilistic trajectories of continuous measures. This is useful in neurodegenerative disease applications for data-driven, biomarker-based patient staging that is not restricted by predefined atlases of regions of interest in the human brain.
 
 ## Gaussian process regression models
 **TODO (@UCL): add description, if possible following the same organization used for Leasp**`
@@ -92,9 +101,9 @@ from longitudinal datasets: a hierarchical model on a manifold of diffeomorphism
 - **Related publications**
   - **General presentation of Clinica software** - Alexandre Routier, Jérémy Guillon, Ninon Burgos, Jorge Samper-Gonzalez, Junhao Wen, Sabrina
 Fontanella, Simona Bottani, Thomas Jacquemont, Arnaud Marcoux, Pietro Gori, Pascal Lu, Tristan Moreau, Michael Bacci, Stanley Durrleman, and Olivier Colliot. Clinica: an open source software
-platform for reproducible clinical neuroscience studies. *In Annual meeting of the Organization for Human Brain Mapping - OHBM 2018*, Singapore, Singapore, June 2018. [Open Access PDF](https://hal.inria.fr/hal-01760658).
+platform for reproducible clinical neuroscience studies. *In Annual meeting of the Organization for Human Brain Mapping - OHBM 2018*, Singapore, Singapore, June 2018. [Open Access link](https://hal.inria.fr/hal-01760658).
   - **T1 MRI and PET applications** - Jorge Samper-Gonzalez, Ninon Burgos, Simona Bottani, Sabrina Fontanella, Pascal Lu, Arnaud Marcoux,
 Alexandre Routier, Jérémy Guillon, Michael Bacci, Junhao Wen, Anne Bertrand, Hugo Bertin, Marie-Odile Habert, Stanley Durrleman, Theodoros Evgeniou, and Olivier Colliot. Reproducible
-evaluation of classification methods in Alzheimer’s disease: Framework and application to MRI and PET data. *NeuroImage*, 183:504–521, December 2018. [Open Access PDF](https://hal.inria.fr/hal-01858384).
+evaluation of classification methods in Alzheimer’s disease: Framework and application to MRI and PET data. *NeuroImage*, 183:504–521, December 2018. [Open Access link](https://hal.inria.fr/hal-01858384).
 - **Description.** Clinica is a software platform for multimodal brain image analysis in clinical research studies. It makes it easy to apply advanced analysis tools to large scale clinical studies. For that purpose, it integrates a comprehensive set of processing tools for the main neuroimaging modalities: currently MRI (anatomical, functional, diffusion) and PET, in the future, EEG/MEG.
 For each modality, Clinica allows to easily extract various types of features (regional measures, parametric maps, surfaces, curves, networks). Such features are then subsequently used as input of machine learning, statistical modeling, morphometry or network analysis methods. Processing pipelines are based on combinations of freely available tools developed by the community. It provides an integrated data management specification to store raw and processing data. Clinica is written in Python. It uses the Nipype system for pipelining. It combines widely-used software for neuroimaging data analysis (SPM, Freesurfer, FSL, MRtrix...), morphometry (Deformetrica), machine learning (Scikit-learn) and the BIDS standard for data organization.
