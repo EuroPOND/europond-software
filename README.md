@@ -107,7 +107,7 @@ from longitudinal datasets: a hierarchical model on a manifold of diffeomorphism
 ![imageDeformetrica](./images/clinica_800.jpg)
 - **Clinica** allows extracting measurements (volumetric and other regional measures, voxel-based maps, cortical thickness, meshes...) from brain imaging data. It also allows converting public datasets (ADNI, AIBL, OASIS) into the standard community format BIDS.
 - **Type of inputs:** neuroimaging data (anatomical MRI, diffusion MRI, PET).
-- **Examples of applications:** extracting measurements that can then be used as inputs of disease progression modeling software (e.g [EBM](#EBM-Event-Based-Model), [pyEBM](pyEBM), [Leasp](Leasp), [Deformetrica](Deformetrica), [dem](DEM), [dive](DIVE), [pySuStaIn](SuStaIn)...)
+- **Examples of applications:** extracting measurements that can then be used as inputs of disease progression modeling software (e.g [EBM](#EBM-Event-Based-Model), [pyEBM](#pyEBM), [Leasp](#Leasp), [Deformetrica](#Deformetrica), [dem](#DEM), [SuStaIn](#pySuStaIn-Subtype-and-Stage-Inference), [dive](#DIVE-Data-driven-Inference-of-Vertexwise-Evolution), [gpr](Gaussian-Process-regression-models-with-latent-time-shift)...)
 - **Links**
   - [Website](http://www.clinica.run/)
   - [Repository](https://gitlab.icm-institute.org/aramislab/clinica)
