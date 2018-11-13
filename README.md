@@ -61,7 +61,7 @@ from longitudinal datasets: a hierarchical model on a manifold of diffeomorphism
 - **SuStaIn** is a software tool for performing **Su**btype and **Sta**ge **In**ference to estimate subtype models of progression from cross-sectional measurements.
 - **Examples of applications in neurological diseases:** learning probabilistic sequences *for multiple subtypes* of cumulative abnormality over the full time course of a disease, including: clinical/cognitive scores, fluid biomarker measurements (e.g. cerebrospinal fluid, blood), imaging biomarkers (volumetric MRI, cortical thickness, FDG PET, amyloid PET, diffusion MRI).
 - **Links**
-  - [Repository](https://github.com/EuroPOND/PySustain)
+  - [Repository](https://github.com/EuroPOND/pySuStaIn)
 - **Type of inputs:** cross-sectional scalar measurements
 - **Related publication**
   - **Original Model** - Young, et al. Uncovering the heterogeneity and temporal complexity of neurodegenerative diseases with Subtype and Stage Inference. *Nature Communications* 9:221, October 2018 [Open Access link](https://doi.org/10.1038/s41467-018-05892-0)
@@ -72,8 +72,8 @@ from longitudinal datasets: a hierarchical model on a manifold of diffeomorphism
 - **DEM** is a software tool for estimating group-level long-term (decades) biomarker trajectories from individual-level short-term (a few years) longitudinal measurements.
 - **Examples of applications in neurological diseases:** learning group-level probabilistic trajectories over the full time course of a disease (decades), having accesss to only a couple of years per individual. Good for scalar biomarkers such as: clinical/cognitive scores, fluid biomarker measurements (e.g. cerebrospinal fluid, blood), imaging biomarkers (volumetric MRI, cortical thickness, FDG PET, amyloid PET, diffusion MRI).
 - **Links**
-  - [Repository](https://github.com/EuroPOND/pyDEM)
-  - [Documentation](https://github.com/EuroPOND/pyDEM/blob/master/README.md)
+  - [Repository](https://github.com/EuroPOND/dem)
+  - [Documentation](https://github.com/EuroPOND/dem/blob/master/README.md)
 - **Type of inputs:** a panel of short-term longitudinal scalar biomarker measurements (at least two data points per individual).
 - **Related publication**
   - **Nonparametric Model** - Oxtoby, et al. Data-driven models of dominantly-inherited Alzheimer's disease progression. *Brain* 2018 [Open Access link](https://doi.org/10.1093/brain/awy050)
@@ -107,7 +107,7 @@ from longitudinal datasets: a hierarchical model on a manifold of diffeomorphism
 ![imageDeformetrica](./images/clinica_800.jpg)
 - **Clinica** allows extracting measurements (volumetric and other regional measures, voxel-based maps, cortical thickness, meshes...) from brain imaging data. It also allows converting public datasets (ADNI, AIBL, OASIS) into the standard community format BIDS.
 - **Type of inputs:** neuroimaging data (anatomical MRI, diffusion MRI, PET).
-- **Examples of applications:** extracting measurements that can then be used as inputs of disease progression modeling software (e.g [EBM](EBM), [pyEBM](pyEBM), [Leasp](Leasp), [Deformetrica](Deformetrica)...)
+- **Examples of applications:** extracting measurements that can then be used as inputs of disease progression modeling software (e.g [EBM](EBM), [pyEBM](pyEBM), [Leasp](Leasp), [Deformetrica](Deformetrica), [dem](DEM), [dive](DIVE), [pySuStaIn](SuStaIn)...)
 - **Links**
   - [Website](http://www.clinica.run/)
   - [Repository](https://gitlab.icm-institute.org/aramislab/clinica)
