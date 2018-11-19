@@ -98,6 +98,7 @@ from longitudinal datasets: a hierarchical model on a manifold of diffeomorphism
 - **Links**
   - [Repository](https://github.com/EuroPOND/GP_progression_model)
   - [Documentation](https://github.com/EuroPOND/GP_progression_model/blob/master/README.md)
+  - [Online tool](http://olidmd.inria.fr/)
 - **Type of inputs:** a panel of longitudinal or cross-sectional scalar biomarker measurements.
 - **Related publication**
   - **Original Model** - Lorenzi, et al. Probabilistic disease progression modeling to characterize diagnostic uncertainty: Application to staging and prediction in Alzheimer's disease. *NeuroImage* 2018 [Publication link](https://doi.org/10.1016/j.neuroimage.2017.08.059)
