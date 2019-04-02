@@ -65,7 +65,7 @@ from longitudinal datasets: a hierarchical model on a manifold of diffeomorphism
 - **Type of inputs:** cross-sectional scalar measurements
 - **Related publication**
   - **Original Model** - Young, et al. Uncovering the heterogeneity and temporal complexity of neurodegenerative diseases with Subtype and Stage Inference. *Nature Communications* 9:221, October 2018 [Open Access link](https://doi.org/10.1038/s41467-018-05892-0)
-- **Description:** This software package is a python implementation of the [original SuStaIn code (MATLAB)](https://github.com/ucl-mig/SuStaInMatlab). The package infers disease subtypes and their progression patterns from cross-sectional datasets --- requiring only a single visit per individual. The resulting disease signature is a set of probabilistic sequences of discrete events useful for fine-grained subtyping and staging across the full time course.
+- **Description:** This software package is a python implementation of the [original SuStaIn code (MATLAB)](https://github.com/ucl-pond/SuStaInMatlab). The package infers disease subtypes and their progression patterns from cross-sectional datasets --- requiring only a single visit per individual. The resulting disease signature is a set of probabilistic sequences of discrete events useful for fine-grained subtyping and staging across the full time course.
 
 ## DEM (Differential Equation Model)
 ![imageDEM](./images/dem_800.jpg)
