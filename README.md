@@ -9,7 +9,9 @@ These software tools allow building signatures of disease progression, studying 
 - **EBM** is a software tool for estimating models of progression from cross-sectional measurements.
 - **Examples of applications in neurological diseases:** learning sequences, with uncertainty, of cumulative abnormality *events* (normal->abnormal) over the full time course of a disease, including: clinical/cognitive scores, fluid biomarker measurements (e.g. cerebrospinal fluid, blood), imaging biomarkers (volumetric MRI, cortical thickness, FDG PET, amyloid PET, diffusion MRI).
 - **Links**
-  - [Repository](https://github.com/EuroPOND/ebm)
+  - DEPRECATED [Repository](https://github.com/EuroPOND/ebm)
+  - [KDE EBM repository](https://github/com/ucl-pond/kde_ebm)
+    - KDE EBM paper: [Firth, *et al.*, Alzheimer's & Dementia, **2020**](https://doi.org/10.1002/alz.12083)
 - **Type of inputs:** cross-sectional scalar measurements
 - **Related publications**
   - **Robust Model** - Young, et al. A data-driven model of biomarker changes in sporadic Alzheimer's disease. *Brain* 137:2564, May 2014 [Open Access link](https://doi.org/10.1093/brain/awu176)
